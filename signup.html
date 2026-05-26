@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>tatto & piercing parlor</title>
+
+<link rel="stylesheet"
+href="signup.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+ <script src="signup.js" defer></script>
+
+
+
+ </head>
+ <body>
+    <div class="signup-container">
+
+<div class="top-buttons">
+
+<button class="rtl-btn" onclick="enableRTL()">
+RTL
+</button>
+
+<button class="theme-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+</div>
+
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="images/logo.png" alt="logo">
+
+</a>
+
+</div>
+
+
+<form>
+
+<label>FULL NAME</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-user"></i>
+
+<input type="text"
+placeholder="Enter your full name">
+
+</div>
+
+
+
+<label>EMAIL ADDRESS</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-envelope"></i>
+
+<input type="email"
+placeholder="Enter your email">
+
+</div>
+
+
+
+<label>PASSWORD</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input type="password"
+id="password"
+placeholder="Create password">
+
+<i class="fa-solid fa-eye eye"
+onclick="togglePassword('password')"></i>
+
+</div>
+
+
+
+<label>CONFIRM PASSWORD</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-lock"></i>
+
+<input type="password"
+id="confirmPassword"
+placeholder="Confirm password">
+
+<i class="fa-solid fa-eye eye"
+onclick="togglePassword('confirmPassword')"></i>
+
+</div>
+
+
+<button class="signup-btn">
+
+CREATE ACCOUNT
+
+</button>
+
+</form>
+
+
+<div class="line">
+
+<span>OR SIGN UP WITH</span>
+
+</div>
+
+
+<button class="social-btn">
+
+<i class="fa-brands fa-apple"></i>
+
+Continue with Apple
+
+</button>
+
+
+<button class="social-btn">
+
+<i class="fa-brands fa-android"></i>
+
+Continue with Android
+
+</button>
+
+
+<p class="login-text">
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</div>
+ </body>
+ </html>
