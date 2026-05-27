@@ -22,12 +22,23 @@ transition:.4s;
 }
 
 .navbar{
+
 display:flex;
 justify-content:space-between;
 align-items:center;
+
 padding:15px 8%;
+
 background:var(--secondary);
-position:relative;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
 }
 
 .logo img{

@@ -38,3 +38,52 @@ function openLoginPage(){
 window.location.href="login.html";
 
 }
+
+const animations =
+document.querySelectorAll(".animation");
+
+window.addEventListener("scroll",()=>{
+
+animations.forEach(item=>{
+
+const itemTop =
+item.getBoundingClientRect().top;
+
+const triggerPoint =
+window.innerHeight/1.3;
+
+if(itemTop < triggerPoint){
+
+item.classList.add("show");
+
+}
+
+});
+
+});
+
+const faqQuestions=
+document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach(question=>{
+
+question.addEventListener("click",()=>{
+
+const answer=
+question.nextElementSibling;
+
+if(answer.style.maxHeight){
+
+answer.style.maxHeight=null;
+
+}
+else{
+
+answer.style.maxHeight=
+answer.scrollHeight+"px";
+
+}
+
+});
+
+});
