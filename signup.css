@@ -154,9 +154,6 @@ color:var(--primary);
 text-decoration:none;
 }
 
-
-/* light mode */
-
 body.light{
 background:white;
 }
